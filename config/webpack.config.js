@@ -138,6 +138,19 @@ module.exports = function(webpackEnv) {
           },
         }
       );
+
+      // if (preProcessor === "less-loader") {
+      //   loaders.push({
+      //     loader: require.resolve(preProcessor),
+      //     options: {
+      //       sourceMap: isEnvProduction && shouldUseSourceMap,
+      //       modifyVars: { //自定义主题
+      //         '@primary-color': ' #1890ff ',
+      //       },
+      //       javascriptEnabled: true
+      //     }
+      //   }) 
+      // }
     }
     return loaders;
   };
