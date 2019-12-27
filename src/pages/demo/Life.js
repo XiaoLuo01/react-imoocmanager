@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Child from "./Child";
+import './index.less'
 
 class Life extends Component {
   constructor(props) {
@@ -18,7 +19,7 @@ class Life extends Component {
   render() {
     console.log('render')
     return (
-      <div style={{padding:30}}>
+      <div className="content">
         <p>React 生命周期介绍</p>
         <button onClick={this.handleAdd}>点击一下</button>
         <p>{this.state.count}</p>
